@@ -46,8 +46,9 @@ messageForm.addEventListener('submit', async (event) => {
             <div class="text">Desculpe, não foi possivel responder sua pergunta no momento!</div>
           `;
         messageContainer.appendChild(botMessageElement);
-        messageContainer.appendChild(messageInput);
-        messageContainer.appendChild(messageSubmit);
+        messageForm.appendChild(messageInput);
+        messageForm.appendChild(messageSubmit);
+        messageContainer.appendChild(messageForm);
         return;
     }
 

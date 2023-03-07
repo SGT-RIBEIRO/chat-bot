@@ -20,9 +20,8 @@ messageForm.addEventListener('submit', async (event) => {
     botMessageElementLoading.classList.add('message', 'bot');
     botMessageElementLoading.innerHTML = `
         <img src="https://img.freepik.com/vetores-premium/robo-bonito-icon-ilustracao-conceito-de-icone-de-robo-de-tecnologia-isolado-estilo-cartoon-plana_138676-1220.jpg" alt="Bot Avatar">
-        <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
+        
+        <div class="spinner"></div>
       `;
     messageContainer.appendChild(botMessageElementLoading);
     messageInput.remove();
